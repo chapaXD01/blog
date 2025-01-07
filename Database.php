@@ -15,7 +15,7 @@ class Database {
         $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     }
 
-    public function query($sql) {
+    public function query($sql, $params) {
         
         //sagatavo vaicajumu (statement) 
         //prepare = metode
@@ -23,7 +23,7 @@ class Database {
 
         // izpildit statement
 
-        $statement->execute();
+        $statement->execute($params);
         return $statement;
         
     }
