@@ -1,0 +1,28 @@
+header {
+    border-bottom: 1px solid black;
+    box-shadow: 7px 0px 10px black ;
+ 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+header ul {
+    margin:0;
+    display: flex;
+    gap: 20px;
+    list-style-type:none;
+
+}
+a {
+    text-decoration: none;
+    color:gray;
+}
+h1 {
+    color:aqua;
+}
+p {
+    color :blue;
+}
