@@ -1,7 +1,7 @@
 
 
-<?php require "components/header.php" ?>
-<?php require "components/navbar.php" ?>
+<?php require "views/components/header.php" ?>
+<?php require "views/components/navbar.php" ?>
 
 
 
@@ -23,11 +23,11 @@
 
 <ul>
 <?php foreach($posts as $post){ ?>
-    <li> <?= $post["content"] ?> </li>
+    <li><a href="show?id= <?= $post["id"] ?>"> <?= htmlspecialchars($post["content"]) ?> </a> </li>
 <?php } ?>
 </ul>
 
-<?php require "components/footer.php" ?>
+<?php require "views/components/footer.php" ?>
 
 </body>
 </html>

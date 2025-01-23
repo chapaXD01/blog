@@ -29,7 +29,7 @@ if(isset($_GET["search_query"]) && $_GET["search_query"] != "" ) {
 }
 $posts = $db->query($select, $params)->fetchALL();
 $pagetitle = "Blog";
-require "views/index.view.php";
+require "views/posts/index.view.php";
 
 ?>
 
