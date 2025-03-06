@@ -18,14 +18,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($errors)){
         
         $params = ["content" => $_POST["content"]];
-        $sql = "INSERT INTO posts (content) VALUES (:content)";
+        $sql = "INSERT INTO
+                 posts (content)
+                VALUES
+                (:content)";
         $post = $db->query($sql, $params)->fetch();
         header("Location: /");
        
     }
     
 }
-    
+    $pagetitle="Create";
 
 
 require "views/posts/create.view.php";

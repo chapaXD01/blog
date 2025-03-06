@@ -1,14 +1,7 @@
 
 <?php
-//file links
 
 
-
-
-
-
-
-//end of file link
 
 // object
 $db = new Database($config["database"]);

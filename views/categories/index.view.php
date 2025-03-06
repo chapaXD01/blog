@@ -6,7 +6,7 @@
 
 
 
-<h1>Blogs</h1>
+<h1>categories</h1>
 
 <form>
 
@@ -21,12 +21,15 @@
 <p> L bozo </p>
 <?php } ?>
 
+
 <ul>
 <?php foreach($posts as $post){ ?>
-    <li><a href="show?id=<?= $post["id"] ?>"> <?= htmlspecialchars($post["content"]) ?> </a> </li>
+    <li><a href="/categories/show?id=<?= $post["id"] ?>"> <?= htmlspecialchars($post["category_name"]) ?> </a> </li>
 <?php } ?>
 </ul>
 
-
+<a href="/categories/create">create</a>
 
 <?php require "views/components/footer.php" ?>
+
+

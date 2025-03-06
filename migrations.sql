@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS blog_ipb23;
+
 
 CREATE DATABASE blog_ipb23;
 
@@ -18,4 +18,23 @@ VALUE
 
 
 
-SELECT * FROM posts;
+
+
+SELECT * FROM posts
+WHERE id = 1;
+
+
+SELECT * FROM posts 
+WHERE content LIKE "%o%";
+
+CREATE TABLE categories(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+category_name VARCHAR(25)
+);blog_ipb23blog_ipb23
+
+INSERT INTO categories
+(category_name)categories
+VALUE
+("Svētki"),
+("Mūzika"),
+("Sports");
